@@ -1,0 +1,3 @@
+HEADER Agilent Logger
+MNEMONIC agnt
+HOMEDIR AGNT_DATA_DIR

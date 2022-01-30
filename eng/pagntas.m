@@ -1,5 +1,5 @@
-function pengas(varargin);
-% pengas( [...] );
+function pagntas(varargin);
+% pagntas( [...] );
 % Agilent Stale
 h = timeplot({'AgDevStale','AgDrvStale'}, ...
       'Agilent Stale', ...

@@ -23,10 +23,15 @@ agilent {
       R16:  (R16,15)  Ohms;
       R17:  (R17,15)  Ohms;
     }
-  };
+  }
+}
+
+AgStale {
   Stale: (AgDevStale,3) (AgDrvStale,3);
 }
 
-{ [agilent];
-  [TMbaseB]
+{
+  HBox { -; Title: Agilent; - };
+  HBox { +|+; [agilent]; +|+; { [AgStale]; [TMbaseB] }; +|+ };
+  -
 }

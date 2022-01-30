@@ -1,5 +1,5 @@
-function pengac(varargin);
-% pengac( [...] );
+function pagntac(varargin);
+% pagntac( [...] );
 % Agilent Count
 h = timeplot({'AgCount'}, ...
       'Agilent Count', ...
