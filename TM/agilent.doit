@@ -1,0 +1,4 @@
+display agilentdisp
+client agilentclt
+memo
+batchfile interact

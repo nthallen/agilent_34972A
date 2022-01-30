@@ -1,0 +1,45 @@
+
+--------Frame Statistics-----------
+Major Frame: 3 minor frames, 1 Hz
+Minor Frame: 57 bytes, 3 Hz
+Effective Frame Dimensions:
+  3 Rows 57 Columns
+  3 rows/sec
+  1368 bits/sec
+  Data:  1256 bits/sec  92 %
+  Synch: 96 bits/sec  7 %
+  Empty: 16 bits/sec  1 %
+-------End of Frame Statistics-----
+
+
+--------PCM Definition-------------
+3/1 Hz 2 bytes Datum MFCtr (1,0,0,2)
+3/1 Hz 2 bytes Datum Synch (1,0,55,2)
+1/1 Hz 147 bytes Group Agilent_Group (3,0,2,53) (3,1,2,53) (3,2,2,41)
+1/1 Hz 1 bytes Member AgDrvStale (3,0,2,1)
+1/1 Hz 1 bytes Member AgDevStale (3,0,3,1)
+1/1 Hz 1 bytes Member AgCount (3,0,4,1)
+1/1 Hz 8 bytes Member R17 (3,0,5,8)
+1/1 Hz 8 bytes Member R16 (3,0,13,8)
+1/1 Hz 8 bytes Member R15 (3,0,21,8)
+1/1 Hz 8 bytes Member R14 (3,0,29,8)
+1/1 Hz 8 bytes Member R13 (3,0,37,8)
+1/1 Hz 8 bytes Member R12 (3,0,45,8)
+1/1 Hz 8 bytes Member R11 (3,0,53,2) (3,1,2,6)
+1/1 Hz 8 bytes Member R10 (3,1,8,8)
+1/1 Hz 8 bytes Member R9 (3,1,16,8)
+1/1 Hz 8 bytes Member R8 (3,1,24,8)
+1/1 Hz 8 bytes Member R7 (3,1,32,8)
+1/1 Hz 8 bytes Member R6 (3,1,40,8)
+1/1 Hz 8 bytes Member R5 (3,1,48,7) (3,2,2,1)
+1/1 Hz 8 bytes Member R4 (3,2,3,8)
+1/1 Hz 8 bytes Member R3 (3,2,11,8)
+1/1 Hz 8 bytes Member R2 (3,2,19,8)
+1/1 Hz 8 bytes Member R1 (3,2,27,8)
+1/1 Hz 8 bytes Member R0 (3,2,35,8)
+1/1 Hz 4 bytes Datum SysTDrift (3,2,43,4)
+1/1 Hz 2 bytes Datum CPU_Pct (3,2,47,2)
+1/1 Hz 2 bytes Datum Disk (3,2,49,2)
+1/1 Hz 2 bytes Datum memused (3,2,51,2)
+-------End of PCM Definition-------
+

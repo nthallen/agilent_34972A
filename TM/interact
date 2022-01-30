@@ -1,0 +1,10 @@
+  Launch      memo   memo -o $Experiment.log -l4
+              [ -z "$launch_err" ] &&
+                msg "Running script interact"
+  Launch      tm_bfr bfr -H bfr: -S:
+  Launch      -TMC-  lgr -N `mlf_find LOG` -n lgr
+  Launch      tm_gen agilentcol
+  Launch      cmd    agilentsrvr -H srvr: -S:
+  Launch      -      tmdf
+  Launch      -      agilent
+  Launch      -TMC-  agilentalgo
