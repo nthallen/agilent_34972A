@@ -1,3 +1,30 @@
+%{
+  int initial_day = 0;
+  
+  /* If HRS_BEHIND_UTC is set to 5, we will restart at midnight EST,
+     ignoring daylight savings. We can increase this number in order
+     to restart earlier for testing. It is even possible to get clever:
+       if we define HRS_BEHIND_UTC 1800+5
+     then the restart will be half an hour before midnight.
+   */
+  #define HRS_BEHIND_UTC 5
+%}
+
 State Init {
   > Telemetry Start
+    depending on (1 Hz) {
+      int cur_day;
+      cur_day = (itime()-(HRS_BEHIND_UTC*3600))/86400L;
+
+      if (initial_day == 0) {
+        initial_day = cur_day;
+      } else if (initial_day != cur_day) {
+        Validate Shutdown;
+      }
+    }
+}
+
+State Shutdown {
+  > Savelog Automatic Restart
+  > Quit
 }
