@@ -1,11 +1,14 @@
 %{
-  int initial_day = 0;
+  #include "nl.h"
+  #include "dasio/msg.h"
+  long initial_day = 0;
   
-  /* If HRS_BEHIND_UTC is set to 5, we will restart at midnight EST,
+  /* If HRS_BEHIND_UTC is set to 5, we will restart at 5 UTC or midnight EST,
      ignoring daylight savings. We can increase this number in order
      to restart earlier for testing. It is even possible to get clever:
        if we define HRS_BEHIND_UTC 1800+5
      then the restart will be half an hour before midnight.
+     3000+12 should restart at 4:50 PM EST
    */
   #define HRS_BEHIND_UTC 5
 %}
@@ -13,12 +16,14 @@
 State Init {
   > Telemetry Start
     depending on (1 Hz) {
-      int cur_day;
+      long cur_day;
       cur_day = (itime()-(HRS_BEHIND_UTC*3600))/86400L;
 
       if (initial_day == 0) {
         initial_day = cur_day;
+	msg(0, "initial_day is %ld", initial_day);
       } else if (initial_day != cur_day) {
+	msg(0, "cur_day is now %ld", cur_day);
         Validate Shutdown;
       }
     }
