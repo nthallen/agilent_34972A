@@ -3,6 +3,7 @@ TMbase.genui
 freemem.tmc
 agilent.genui
 agilent.tmc
+agilent_base.tbl
 agilenttblnc.tmc
 agilentdispnc.cc
 agilentdispncoui.cc
@@ -37,11 +38,6 @@ agilentengext.o
 agilentengextoui.o
 agilenttblnc.tmc.dep
 *.err
-TMbase.tbl
-TMbase.genui
-freemem.tmc
-agilent.genui
-agilent.tmc
 *.o
 *.exe
 *.stackdump

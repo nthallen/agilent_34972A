@@ -1,37 +1,8 @@
+Input "agilent_base.tbl";
 Input "TMbase.tbl";
-
-agilent {
-  HBox {
-    {
-      R0:   (R0,15)  Ohms;
-      R1:   (R1,15)  Ohms;
-      R2:   (R2,15)  Ohms;
-      R3:   (R3,15)  Ohms;
-      R4:   (R4,15)  Ohms;
-      R5:   (R5,15)  Ohms;
-      R6:   (R6,15)  Ohms;
-      R7:   (R7,15)  Ohms;
-      R8:   (R8,15)  Ohms;
-    }; |; {
-      R9:   (R9,15)   Ohms;
-      R10:  (R10,15)  Ohms;
-      R11:  (R11,15)  Ohms;
-      R12:  (R12,15)  Ohms;
-      R13:  (R13,15)  Ohms;
-      R14:  (R14,15)  Ohms;
-      R15:  (R15,15)  Ohms;
-      R16:  (R16,15)  Ohms;
-      R17:  (R17,15)  Ohms;
-    }
-  }
-}
-
-AgStale {
-  Stale: (AgDevStale,3) (AgDrvStale,3);
-}
 
 {
   HBox { -; Title: Agilent; - };
-  HBox { +|+; [agilent]; +|+; { [AgStale]; [TMbaseB] }; +|+ };
+  HBox { +|+; [AgData]; +|+; { [AgStale]; [TMbaseB] }; +|+ };
   -
 }
