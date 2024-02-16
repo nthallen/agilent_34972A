@@ -15,6 +15,13 @@ agilentalgooui.cc
 agilentalgo.o
 agilentalgooui.o
 doit.dep
+agilentjsonext.cdf
+agilentjsonextcdf.oui
+agilentjsonextcdf.tmc
+agilentjsonext.cc
+agilentjsonextoui.cc
+agilentjsonext.o
+agilentjsonextoui.o
 agilentcmd.cc
 agilentcmd.dat
 agilentcmd.h
@@ -45,6 +52,7 @@ Makefile
 agilentdispnc
 agilentalgo
 doit
+agilentjsonext
 agilentcltnc
 agilentsrvr
 agilentcol

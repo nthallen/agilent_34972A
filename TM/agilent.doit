@@ -1,4 +1,5 @@
 display agilentdisp
 client agilentclt
+extraction agilentjsonext -n json
 memo
 batchfile interact

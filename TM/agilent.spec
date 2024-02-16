@@ -18,3 +18,4 @@ IDISTRIB = doit
 agilentdisp : agilent.tbl
 agilentalgo : agilent.tma
 doit : agilent.doit
+agilentjsonext : $genuibase
