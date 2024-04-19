@@ -1,0 +1,5 @@
+host spi1 spi1.arp.harvard.edu
+hostname spi1.arp.harvard.edu
+ForwardAgent yes
+user pi
+

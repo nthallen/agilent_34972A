@@ -1,0 +1,15 @@
+### Begin agilent ssh_config_insert ###
+# Match all is necessary to close any preceding host blocks
+Match all
+include /etc/monarch/agilent/ssh_config
+
+# On the Raspberry Pi, we are using a single account
+# with the username pi. This is configured in the file included
+# above. If you know what you're doing and need to use a different
+# username standard monarch tools (./doit, saverun, reduce, etc.)
+# specify it outside this block using the following syntax or
+# equivalent:
+#   hostname spi1.arp.harvard.edu
+#   user my_username
+
+### End agilent ssh_config_insert ###
