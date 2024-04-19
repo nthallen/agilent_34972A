@@ -144,7 +144,7 @@ if ($setup_cygwin) {
   if (Test-Path -Path setup-x86_64.exe -PathType Leaf)
   {
     Write-Output "`nInvoking Cygwin Setup`n"
-    start-process setup-x86_64.exe  -Wait -argumentlist "--packages bzip2,cygwin-doc,file,less,openssh,git,chere,cmake,doxygen,graphviz,gcc-core,gcc-g++,gdb,make,bison,flex,perl,libncurses-devel,screen"
+    start-process setup-x86_64.exe  -Wait -argumentlist "--packages bzip2,cygwin-doc,file,less,openssh,git,chere,cmake,doxygen,graphviz,gcc-core,gcc-g++,gdb,make,bison,flex,perl,libncurses-devel,screen --upgrade-also --no-desktop"
   }
   else
   {
@@ -646,6 +646,14 @@ EOF
   fi
 
   ins_file=$exp_src/setup/ssh_config_insert
+  ssh_cfg=$exp_src/setup/ssh_config
+  cfg_dir=/etc/monarch/$exp_base
+  if [ -f $ssh_cfg ]; then
+    $sudo mkdir -p $cfg_dir
+    [ -d $cfg_dir ] || nl_error "Unable to create $cfg_dir"
+    $sudo cp $ssh_cfg $cfg_dir
+    $sudo chmod g-w $cfg_dir/ssh_config
+  fi
   if [ -f $ins_file ]; then
     umask 023 # Make sure not to add g+w to ~/.ssh/config
     line1=$(head -n1 $ins_file)
