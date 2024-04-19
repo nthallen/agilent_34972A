@@ -21,7 +21,7 @@ dfs.plot('tmcpu','label','CPU','vars',{'CPU_Pct'});
 dfs.plot('tmram','label','RAM','vars',{'memused'});
 dfs.plot('tmd','label','Disk','vars',{'Disk'});
 dfs.plot('a', 'label', 'Agilent', 'plots', {'ac','acount','as'});
-dfs.plot('ac','label','C','vars',{'R1','R2','R3','R4','R5','R6','R7'});
+dfs.plot('ac','label','C','vars',{'R1','R2','R3','R4','R5','R6','R7','R8'});
 dfs.plot('acount','label','Count','vars',{'AgCount'});
 dfs.plot('as','label','Stale','vars',{'AgDevStale','AgDrvStale'});
 dfs.end_col;
