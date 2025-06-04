@@ -1,4 +1,4 @@
-function fig = gagnta(varargin);
+function fig = gagnta(varargin)
 % gagnta(...)
 % Agilent
 ffig = ne_group(varargin,'Agilent','pagntac','pagntacount','pagntas');

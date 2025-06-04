@@ -10,7 +10,7 @@
      then the restart will be half an hour before midnight.
      3000+12 should restart at 4:50 PM EST
    */
-  #define HRS_BEHIND_UTC 5
+  #define HRS_BEHIND_UTC 1800+3
 %}
 
 State Init {

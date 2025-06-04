@@ -1,4 +1,4 @@
-function pagntacount(varargin);
+function pagntacount(varargin)
 % pagntacount( [...] );
 % Agilent Count
 h = timeplot({'AgCount'}, ...

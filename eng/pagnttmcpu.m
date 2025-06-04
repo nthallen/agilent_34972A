@@ -1,4 +1,4 @@
-function pagnttmcpu(varargin);
+function pagnttmcpu(varargin)
 % pagnttmcpu( [...] );
 % T Mbase CPU
 h = timeplot({'CPU_Pct'}, ...

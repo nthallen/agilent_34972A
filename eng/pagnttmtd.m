@@ -1,4 +1,4 @@
-function pagnttmtd(varargin);
+function pagnttmtd(varargin)
 % pagnttmtd( [...] );
 % T Mbase T Drift
 h = timeplot({'SysTDrift'}, ...

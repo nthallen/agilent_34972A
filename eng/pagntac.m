@@ -1,4 +1,4 @@
-function pagntac(varargin);
+function pagntac(varargin)
 % pagntac( [...] );
 % Agilent C
 h = timeplot({'R1','R2','R3','R4','R5','R6','R7','R8'}, ...
